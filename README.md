@@ -1,23 +1,42 @@
-# SmartFlood V1 – Barangay Portal Prototype
+# SmartFlood V1
 
 ## Overview
 
-SmartFlood V1 – Barangay Portal Prototype is an early architectural prototype of the SmartFlood capstone project.
+SmartFlood V1 is the first complete web prototype developed for our capstone project.
 
-This repository was created to explore a deployment strategy where each barangay would have its own dedicated web application. The goal was to improve system organization and isolate access between different barangays while developing the early versions of SmartFlood.
+This version introduced the core concept of SmartFlood as an AI-assisted flood monitoring and disaster management platform. It focused on establishing the project's overall architecture, user experience, and role separation while demonstrating how residents, barangay officials, and administrators would interact with the system.
 
-Although this architecture was later replaced with a unified role-based system, this repository documents the initial design approach and the lessons learned during development.
+Unlike the earlier experimental repositories, this version represents the first integrated implementation of the SmartFlood platform.
 
 ---
 
-## Purpose
+## Live Demo
 
-The objective of this prototype was to:
+🌐 **Demo:** https://smart-flood-relief.vercel.app
 
-* Explore separate deployments for individual barangays.
-* Restrict users to viewing only the sensors assigned to their barangay.
-* Prototype a secure monitoring dashboard for local government officials.
-* Evaluate whether isolated deployments would improve security and system organization.
+---
+
+## Project Objectives
+
+The primary objectives of this version were to:
+
+* Develop the first complete SmartFlood web platform.
+* Design a responsive public landing page.
+* Introduce role-based access for administrators and barangay officials.
+* Demonstrate the SmartFlood ecosystem before integrating advanced AI and IoT capabilities.
+* Validate the overall system flow for the capstone proposal.
+
+---
+
+## Features
+
+* Responsive landing page
+* Admin login portal
+* Barangay Official login portal
+* Mobile application download via QR Code
+* Flood monitoring interface prototype
+* Donation feature concept
+* Public information pages
 
 ---
 
@@ -26,60 +45,56 @@ The objective of this prototype was to:
 * Next.js
 * React
 * TypeScript
-* MongoDB
-* JavaScript / TypeScript
+* Tailwind CSS
+* Vercel
 
 ---
 
-## Features Explored
+## Architecture
 
-* Barangay-specific dashboard
-* Sensor filtering per barangay
-* Restricted access to assigned sensor data
-* Early authentication experiments
-* Separate deployment architecture
+This version explored a multi-portal architecture.
 
----
+Different users were expected to access separate interfaces depending on their responsibilities.
 
-## Architecture Concept
+* Administrator Portal
+* Barangay Official Portal
+* Resident Mobile Application
 
-In this version, every barangay was intended to have its own deployment.
-
-For example:
-
-* Barangay Tanong officials could only view Sensor 1.
-* Other barangays would only access the sensors assigned to their jurisdiction.
-
-The objective was to provide strict separation between local government units and simplify access control during the early stages of development.
+As the project evolved, this design was refined into a more centralized architecture using Role-Based Access Control (RBAC).
 
 ---
 
 ## Project Evolution
 
-As SmartFlood continued to evolve, this architecture was replaced with a centralized system using Role-Based Access Control (RBAC).
+SmartFlood continued to evolve after this release.
 
-Instead of maintaining multiple deployments for each barangay, a single application was developed where permissions determine which data a user can access.
+Future versions introduced:
 
-This approach reduced maintenance complexity while still providing secure access to authorized users.
+* Improved UI/UX
+* AI-assisted flood prediction
+* Better dashboard design
+* Hardware integration
+* Backend separation
+* Improved system architecture
 
 ---
 
 ## Lessons Learned
 
-This prototype helped me understand:
+Developing this version taught me:
 
-* Access control strategies
-* Multi-tenant application concepts
-* User authorization
-* Dashboard design for different user roles
-* Architectural trade-offs between multiple deployments and centralized RBAC
+* Building complete applications with Next.js
+* Designing responsive interfaces
+* Structuring larger React projects
+* Planning multi-role systems
+* Understanding the importance of iterative software development
 
-One important lesson from this prototype was that maintaining separate deployments for every barangay increases operational complexity. As the project matured, a centralized application with RBAC proved to be a more scalable and maintainable solution.
+One important lesson from this version was that designing a scalable system often requires multiple architectural revisions. Many concepts introduced here were refined in later versions as the project requirements became clearer.
 
 ---
 
 ## Current Status
 
-📦 Historical Prototype
+📦 Historical Milestone
 
-This repository is preserved to document the early architectural decisions made during the development of SmartFlood. Although the deployment strategy changed, the concepts explored in this prototype influenced the design of later versions of the system.
+This repository is preserved as the first complete SmartFlood web implementation and documents the project's transition from individual experiments into an integrated platform.
